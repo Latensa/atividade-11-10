@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criação de uma Página Simples com CSS Interno</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            padding: 20px 0px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding: 20px 30px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            transition: color 0.1s;
+        }
+
+        nav ul li a:hover {
+            color: bisque;
+        }
+
+        section {
+            padding: 60px 20px;
+            text-align: center;
+            height: 900px;
+        }
+
+        #Home {
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            background-color: white;
+            height: 550px
+        }
+
+        #Home h1 {
+            margin-bottom: 20px;
+        }
+
+        #Home p {
+            text-align: justify;
+        }
+
+        .img-home img {
+            margin: 30px;
+            margin-top: 100px;
+        }
+
+        #Institucional {
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            background-color: lightgray;
+        }
+
+        #Institucional h1 {
+            margin-bottom: 20px;
+        }
+
+        #Institucional p {
+            text-align: justify;
+        }
+
+        #Areas-de-atuacao {
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            background-color: lightslategray;
+        }
+
+        #Areas-de-atuacao h1 {
+            margin-bottom: 20px;
+        }
+
+        #Areas-de-atuacao p {
+            text-align: justify;
+        }
+
+        #Contato {
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            background-color: lightgray;
+            height: 450px
+        }
+
+        #Contato h1 {
+            margin-bottom: 20px;
+        }
+
+        #Contato h3 {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        #Trabalhe-Conosco {
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            background-color: lightsteelblue;
+            height: 450px
+        }
+
+        #Trabalhe-Conosco h1 {
+            margin-bottom: 20px;
+        }
+
+        #Trabalhe-Conosco h3 {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            width: 90px;
+            height: 40px;
+            object-position: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Menu-Navegacao">
+        <header>
+            <img class="logo" src="img/Amazon-Logo.png" alt="receba a porra da logo">
+            <nav>
+                <ul>
+                    <li><a href="#Home">Início</a></li>
+                    <li><a href="#Institucional">Institucional</a></li>
+                    <li><a href="#Areas-de-atuacao">Áreas de Atuação</a></li>
+                    <li><a href="#Contato">Contato</a></li>
+                    <li><a href="#Trabalhe-Conosco">Trabalhe Conosco</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <section id="Home">
+        <h1>Bem-Vindo a Amazon</h1>
+        <p>Estamos felizes em tê-lo aqui! Na Amazon, nossa missão é ser a empresa mais centrada no cliente do mundo,
+            onde você pode encontrar tudo o que precisa, desde livros a eletrônicos, moda e muito mais. Navegue por
+            milhões de produtos, aproveite nossas ofertas exclusivas e descubra um mundo de conveniência na palma da sua
+            mão. Com entregas rápidas e um atendimento ao cliente dedicado, sua satisfação é nossa prioridade. Sinta-se
+            à vontade para explorar e descobrir novas experiências de compra. Estamos aqui para transformar sua maneira
+            de comprar online. Aproveite sua visita!</p>
+        <div class="img-home">
+            <img src="img/parcele suas compras.jfif">
+            <img src="img/pague.jfif">
+            <img src="img/rastreie.jfif">
+        </div>
+    </section>
+
+    <section id="Institucional">
+        <h1>Institucional</h1>
+        <p>A Amazon é uma das maiores empresas de tecnologia e comércio eletrônico do mundo, fundada em 1994 por Jeff
+            Bezos. Nossa missão é ser a empresa mais centrada no cliente, onde os consumidores possam encontrar e
+            descobrir qualquer coisa que queiram comprar, além de oferecer a melhor experiência de compra. Com um
+            portfólio diversificado que inclui produtos digitais, serviços em nuvem e dispositivos eletrônicos, estamos
+            na vanguarda da inovação. Acreditamos na sustentabilidade e trabalhamos continuamente para reduzir nossa
+            pegada de carbono. Nossa cultura é guiada pela diversidade, inclusão e empoderamento de colaboradores.
+            Estamos comprometidos em criar um futuro melhor para todos, impulsionando a economia digital e investindo em
+            comunidades ao redor do mundo. Venha explorar as infinitas possibilidades conosco!</p>
+    </section>
+
+    <section id="Areas-de-atuacao">
+        <h1>Áreas de Atuação</h1>
+        <p>A Amazon atua em diversas áreas, refletindo nossa missão de inovar e atender às necessidades dos clientes. No
+            comércio eletrônico, oferecemos uma vasta gama de produtos, desde livros até eletrônicos, facilitando
+            compras rápidas e convenientes. Em serviços de nuvem, a AWS (Amazon Web Services) é líder global,
+            proporcionando infraestrutura robusta e escalável para empresas de todos os tamanhos.
+
+            Além disso, investimos em entretenimento por meio do Amazon Prime Video, oferecendo uma rica seleção de
+            filmes e séries. No campo da inteligência artificial, desenvolvemos soluções que melhoram a experiência do
+            usuário, como a assistente Alexa. Nossa atuação em logística e entrega também é inovadora, garantindo que os
+            clientes recebam seus pedidos de forma rápida e eficiente. Com um compromisso contínuo com a
+            sustentabilidade, buscamos práticas que promovam um impacto positivo no planeta. Explore nossas áreas de
+            atuação e descubra como estamos moldando o futuro!</p>
+    </section>
+
+    <section id="Contato">
+        <h1>Contato</h1>
+        <p>Se você tiver alguma dúvida ou precisar de assistência, não hesite em entrar em contato conosco. Abaixo estão
+            algumas opções de contato e informações úteis:</p>
+
+        <h3>Opções de Contato:</h3>
+        <ul>
+            <li><strong>E-mail:</strong> suporte@amazon.com</li>
+            <li><strong>Telefone:</strong> 0800-123-4567</li>
+            <li><strong>Chat ao Vivo:</strong> Disponível no site durante o horário comercial.</li>
+        </ul>
+
+        <h3>Horário de Atendimento:</h3>
+        <ul>
+            <li><strong>Segunda a Sexta:</strong> 9h às 18h</li>
+            <li><strong>Sábado:</strong> 10h às 14h</li>
+            <li><strong>Domingo:</strong> Fechado</li>
+        </ul>
+
+        <h3>Outras Informações:</h3>
+        <ul>
+            <li><strong>FAQ:</strong> Consulte nossa seção de perguntas frequentes para dúvidas comuns.</li>
+            <li><strong>Centro de Ajuda:</strong> Visite o Centro de Ajuda para mais informações sobre produtos e
+                serviços.</li>
+        </ul>
+        </div>
+    </section>
+
+    <section id="Trabalhe-Conosco">
+        <h1>Trabalhe Conosco</h1>
+        <p>Estamos sempre em busca de talentos para se juntar à nossa equipe. Se você está interessado em fazer parte da nossa missão, confira as informações abaixo:</p>
+    
+        <h3>O que buscamos:</h3>
+        <ul>
+            <li>Paixão pelo que faz</li>
+            <li>Trabalho em equipe</li>
+            <li>Inovação e criatividade</li>
+            <li>Compromisso com a qualidade</li>
+        </ul>
+    
+        <h3>Como se candidatar:</h3>
+        <ul>
+            <li>Envie seu currículo para: <strong>exemploxD@gmail.com</strong></li>
+            <li>Inclua uma carta de apresentação</li>
+            <li>Fique atento às oportunidades em nosso site</li>
+        </ul>
+    
+        <h3>Benefícios:</h3>
+        <ul>
+            <li>Plano de saúde</li>
+            <li>Vale alimentação</li>
+            <li>Descontos em produtos</li>
+            <li>Ambiente de trabalho colaborativo</li>
+        </ul>
+    </section>
+</body>
+
+</html>
